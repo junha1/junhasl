@@ -3,7 +3,7 @@
 // can be commonly used with both C++ / Python
 
 #include "YSL_SerializationConfiguration.h"
-#include "../YTL/YTL.h"
+#include "junhatl/YTL.h"
 
 #if (YSLSC_GLM_USE)
 #include "Headers/Header_GLM.h" // modify this if you want
