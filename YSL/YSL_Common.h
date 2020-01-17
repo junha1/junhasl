@@ -1,7 +1,7 @@
 #pragma once
 
 #include "YSL_SerializationConfiguration.h"
-#include "../junhatl/YTL.h"
+#include "../YTL.h"
 
 #if (YSLSC_GLM_USE)
 #include "Headers/Header_GLM.h" // modify this if you want
