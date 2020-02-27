@@ -67,6 +67,11 @@ namespace ysl
 		using type = typename TypeConfirm<T>::type;
 	};
 
+	template <size_t N>
+	struct TypeConfirm<char[N]>
+	{
+		using type = string;
+	};
 	
 	/*
 	======================================

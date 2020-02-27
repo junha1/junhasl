@@ -177,6 +177,15 @@ namespace ysl
 		}
 	}
 	template <bool W>
+	void to_raw_data(bpos& p, const char* x)
+	{
+		size_t size = strlen(x);
+		to_raw_data<W>(p, size);
+		if constexpr (W)
+			memcpy(p, &x[0], size);
+		p += size;
+	}
+	template <bool W>
 	void to_raw_data(bpos& p, const string& x)
 	{
 		to_raw_data<W>(p, x.size());
