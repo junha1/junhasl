@@ -72,6 +72,18 @@ namespace ysl
 	{
 		using type = string;
 	};
+
+	template <size_t N>
+	struct TypeConfirm<const char[N]>
+	{
+		using type = string;
+	};
+
+	template <>
+	struct TypeConfirm<const char*>
+	{
+		using type = string;
+	};
 	
 	/*
 	======================================

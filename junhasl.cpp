@@ -19,7 +19,7 @@ int main()
 {
 	auto names = Cat::ysl_names();
 
-	auto k = ysl::to("fuck");
+	auto k = ysl::to(tuple{ "fuck", "suck" });
 
 	cout << "Hello CMake." << endl;
 	return 0;
